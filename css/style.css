@@ -29,7 +29,8 @@ body {
   width: 100%;
   padding: 10px;
   margin-bottom: 5px;
-  border: #F8EDEB 1px solid;
+  border: 1px #b5838d solid;
+  box-shadow: #b5838d 2px 2px;
 }
 
 .btn-dark {
@@ -45,8 +46,10 @@ body {
   background: #FFF;
   padding: 3px; 
   width: 100%;
-  border: 1px #666 solid;
+  border: 1px #b5838d solid;
+  box-shadow: #b5838d 2px 2px;
   margin-bottom: 10px;
+  text-align-last:center;
 }
 
 #photos {
