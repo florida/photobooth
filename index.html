@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photobooth</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="navbar">
+    <h1>Camera App</h1>
+  </div>
+
+  <div class="top-container">
+    <video id="video">Stream not available...</video>
+    <button id="photo-button" class="btn btn-dark">
+      Take Photo
+    </button>
+    <select id="photo-filter" class="select">
+      <option value="none">Normal</option>
+      <option value="grayscale(100%)">Grayscale</option>
+      <option value="sepia(100%)">Sepia</option>
+      <option value="invert(100%)">Invert</option>
+      <option value="hue-rotate(90deg)">Hue</option>
+      <option value="blur(10px)">Blur</option>
+      <option value="contrast(200%)">Contrast</option>
+      <option value="saturate(200%)">Saturate</option>
+      <option value="brightness(2.0)">Brighten</option>
+      <option value="sepia(0.5) brightness(.9) contrast(200%)">Experiment</option>
+      <option value="grayscale(1) contrast(200%)">Experiment 2</option>
+
+    </select>
+    <button id="clear-button" class="btn btn-light">Clear</button>
+    <canvas id="canvas"></canvas>
+  </div>
+  <div class="bottom-container">
+    <div id="photos"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
